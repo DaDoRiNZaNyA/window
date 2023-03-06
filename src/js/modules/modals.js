@@ -5,6 +5,8 @@ const modals = () => {
               close = document.querySelector(closeSelector),
               windows = document.querySelectorAll('[data-modal]');
 
+        
+
         trigger.forEach(item => {
             item.addEventListener('click', (e) => {
                 if (e.target) {
@@ -17,7 +19,6 @@ const modals = () => {
     
                 modal.style.display = "block";
                 document.body.style.overflow = "hidden";
-                // document.body.classList.add('modal-open');
             });
         });
 
@@ -28,7 +29,6 @@ const modals = () => {
 
             modal.style.display = "none";
             document.body.style.overflow = "";
-            // document.body.classList.remove('modal-open');
         });
 
         modal.addEventListener('click', (e) => {
@@ -39,7 +39,6 @@ const modals = () => {
 
                 modal.style.display = "none";
                 document.body.style.overflow = ""; 
-                // document.body.classList.remove('modal-open');
             }
         });
     }
